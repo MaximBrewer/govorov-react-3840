@@ -1,0 +1,45 @@
+{
+    "name": "quiz",
+    "version": "1.0.0",
+    "description": "Викторина",
+    "main": "main.js",
+    "window": {
+        "resizable": false,
+        "autoHideMenuBar": true,
+        "menuBarVisible": false,
+        "excludedFromShownWindowsMenu": true,
+        "frame": false,
+        "documentEdited": false,
+        "show": false
+    },
+    "scripts": {
+        "start": "electron .",
+        "build-win": "electron-builder -w",
+        "build-mac": "electron-builder -m"
+    },
+    "author": "John Woe",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^22.0.0",
+        "electron-builder": "^24.9.1"
+    },
+    "build": {
+        "productName": "Викторина",
+        "appId": "e1",
+        "electronVersion": "12.0.5",
+        "win": {
+            "target": {
+                "target": "nsis",
+
+            "arch": ["ia32"]
+            }
+        },
+        "portable": {
+            "artifactName": "Quiz.exe"
+        },
+        "directories": {
+            "output": "electron/dist",
+            "buildResources": "build"
+        }
+    }
+}

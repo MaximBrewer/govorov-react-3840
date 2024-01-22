@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./slick/slick.scss";
+@import "./slick/slick-theme.scss";
+
+html,
+body {
+    overflow: hidden;
+}
+
+#app {
+    @apply w-full h-full relative
+}
+
+.text-shadow {
+    text-shadow: 0px 8px 20px rgba(48, 77, 88, 0.3);
+}
+
+.title-shadow {
+    text-shadow: 0px 8px 20px rgba(48, 77, 88, 0.3);
+}
+
+.vinetka{
+    box-shadow: inset 0px 0px 400px rgba(0, 0, 0, 0.75);
+}
